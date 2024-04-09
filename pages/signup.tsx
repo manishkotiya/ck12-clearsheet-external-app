@@ -375,6 +375,7 @@ const Signup = () => {
   return (
     <>
       <Head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
         <link
           href="/static/css/signup.css"
           rel="stylesheet"
@@ -396,7 +397,12 @@ const Signup = () => {
                           <h3 className="heading">
                             Step <span className="stepnumber">1</span>
                           </h3>
-                          <div className="form-group w-100 pr-2">
+
+                          <div className="form-row">
+
+                        
+
+                          <div className="form-group w-100 pr-2 col-md-6">
                             <label>First Name</label>
                             <input
                               type="text"
@@ -414,7 +420,8 @@ const Signup = () => {
                               ""
                             )}
                           </div>
-                          <div className="form-group w-100 ">
+
+                          <div className="form-group w-100 col-md-6">
                             <label>Last Name</label>
                             <input
                               type="text"
@@ -432,48 +439,55 @@ const Signup = () => {
                               ""
                             )}
                           </div>
-                          <div className="form-group w-100">
-                            <label>State</label>
-                            <div className="">
-                              <Select
-                                name="stateId"
-                                value={selectedState}
-                                options={selectoptions}
-                                onChange={handle_dropdown}
-                                placeholder="Select State"
-                                id="stateId"
-                                styles={colourStyles}
-                              />
-                              {note != "" ? (
-                                <div className="info">{note}</div>
-                              ) : null}
-                              {validationError.stateId ? (
-                                <span className="validation-error">
-                                  {validationError.stateId}
-                                </span>
-                              ) : null}
-                            </div>
+
                           </div>
-                          <div className="form-group w-100">
-                            <label>District</label>
-                            <div className="">
-                              <Select
-                                name="districtId"
-                                value={selectedDistrict}
-                                options={districtOptions}
-                                onChange={handle_dropdown}
-                                placeholder="Select District"
-                                styles={colourStyles}
-                              />
-                              {validationError.districtId ? (
-                                <span className="validation-error">
-                                  {validationError.districtId}
-                                </span>
-                              ) : (
-                                ""
-                              )}
-                            </div>
-                          </div>
+
+
+                         <div className="form-row w-100">
+                              <div className="form-group col-md-6">
+                                <label>State</label>
+                                <div className="">
+                                  <Select
+                                    name="stateId"
+                                    value={selectedState}
+                                    options={selectoptions}
+                                    onChange={handle_dropdown}
+                                    placeholder="Select State"
+                                    id="stateId"
+                                    styles={colourStyles}
+                                  />
+                                  {note != "" ? (
+                                    <div className="info">{note}</div>
+                                  ) : null}
+                                  {validationError.stateId ? (
+                                    <span className="validation-error">
+                                      {validationError.stateId}
+                                    </span>
+                                  ) : null}
+                                </div>
+                              </div>
+                              <div className="form-group col-md-6">
+                                <label>District</label>
+                                <div className="">
+                                  <Select
+                                    name="districtId"
+                                    value={selectedDistrict}
+                                    options={districtOptions}
+                                    onChange={handle_dropdown}
+                                    placeholder="Select District"
+                                    styles={colourStyles}
+                                  />
+                                  {validationError.districtId ? (
+                                    <span className="validation-error">
+                                      {validationError.districtId}
+                                    </span>
+                                  ) : (
+                                    ""
+                                  )}
+                                </div>
+                                </div>
+                         </div>
+
                           <div className="form-group w-100">
                             <label>School </label>
                             <div className="">

@@ -32,7 +32,6 @@
     overflow-y: auto;
     perspective: 300px;
     display: block;
-    background: #0d68c7;
 }
 
 .loading {
@@ -712,30 +711,29 @@
 }
 body {
     overflow: hidden;
+    background-color: #F5FBFF;
 }
 .signupContainer {
     border-radius: 5px;
-    box-shadow: 0px 4px 5px #242424;
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
     width: 100%;
-    background: rgb(52 65 157 / 40%);
+    border: 1px #D9D9D9 solid;
+    background-color: #fff;
+    
 }
 
 
 .singupSection input, 
 .singupSection select {
     padding: 10px;
-    display: block;
     width: 100%;
     border-radius: 5px;
-    background-color: rgb(0 0 0 / 20%);
-    border: 1px solid #eee;
-    color: #fff;
+    border: 1px solid #CFCFCF;
 }
 .singupSection label{
-    color:#fff;
+
     margin-bottom: 5px;
     display: inline-block;
 }
@@ -787,6 +785,13 @@ cursor: pointer;}
 }
 .captcha {
     margin-bottom: 10px;
+}
+
+.css-1i0qyv-control{
+    background: #fff;
+}
+.css-7crn4c-singleValue{
+    color: #000 !important;
 }
 
 @media all and (max-width:1100px) {

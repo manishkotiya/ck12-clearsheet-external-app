@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import COMMONCONSTANT from '@constants/commonConstant'
 import React, { useEffect  } from 'react';
-import '../public/static/css/signup.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
