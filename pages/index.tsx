@@ -14,5 +14,5 @@ export default function Home() {
       navigation.push(COMMONCONSTANT.ROUTEPATH.REQUESTMOREINFO);
     }, [])
     
-    return <div>Loading...</div>;
+    return <div>Loading...</div>; 
 }
